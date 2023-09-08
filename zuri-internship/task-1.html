@@ -33,20 +33,31 @@ p{
 	text-align: center;
 	padding: 5px 0;
 	font-size: 20px;
-    	font-weight: bold;
+    font-weight: bold;
+}
+.container{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 </style>
 	</head>
 	<body>
-		<h1 data-testid="slackUserName">Edah Eyide Azariah</h1>
-		<img src="2pzk9e.jpg" alt="Edah Eyide Azariah" data-testid="slackDisplayImage">
-		<a data-testid="currentDayOfTheWeek">Today is <span id="today"></span></a>
+		<div class="container">
+			<div>
+				<h1 data-testid="slackUserName">Edah Eyide Azariah</h1>
+				<img src="2pzk9e.jpg" alt="Edah Eyide Azariah" data-testid="slackDisplayImage">
+				<a data-testid="currentDayOfTheWeek">Today is <span id="today"></span></a>
 
-		<a data-testid="currentUTCTime"> Current UTC Time is  <span id="time"></span></a>
+				<a data-testid="currentUTCTime"> Current UTC Time is  <span id="time"></span></a>
 
-		<p data-testid="myTrack">My Track: Frontend-track</p>
+				<p data-testid="myTrack">My Track: Frontend-track</p>
 
-		<a data-testid="githubURL" href="https://az2818.github.io/">view  Github repository</a>
+				<a data-testid="githubURL" href="https://az2818.github.io/">view  Github repository</a>
+			</div> 
+		</div>
 	</body>
 	<script>
 		//Todays Date
