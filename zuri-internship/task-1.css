@@ -15,20 +15,10 @@ img{
 	margin: 20px auto;
 	
 }
-a{
-	text-align: center;
-	font-weight: bold;
-    	font-size: 30px;
-	background-color: black;
-	color: white;
-	display: block;
-	margin: 20px;
-	padding: 5px 0;
-}
 .p-tags{
 	text-align: center;
 	font-weight: bold;
-    	font-size: 30px;
+    font-size: 30px;
 	background-color: black;
 	color: white;
 	display: block;
@@ -42,6 +32,16 @@ p{
 	text-align: center;
 	padding: 5px 0;
 	font-size: 30px;
-    	font-weight: bold;
-    	color: white;
+    font-weight: bold;
+    color: white;
+}
+a{
+    text-align: center;
+	font-weight: bold;
+    font-size: 30px;
+	background-color: black;
+	color: white;
+	display: block;
+	margin: 20px;
+	padding: 5px 0;
 }
