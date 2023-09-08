@@ -2,29 +2,25 @@
 <html>
 	<head>
 		<title> zuri task 1</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
-		<html lang="en-us">
-		<link rel="stylesheet" href="task-1.css">
+		<link rel="stylesheet" href="new-file.css">
 	</head>
 	<body>
-		<main class="container">
+		<div class="container">
 			<div>
 				<h1 data-testid="slackUserName">Edah Eyide Azariah</h1>
 				<img src="2pzk9e.jpg" alt="Edah Eyide Azariah" data-testid="slackDisplayImage">
-				<p data-testid="currentDayOfTheWeek" class"p-tags">Today is <span id="today"></span></p>
+				<p class="p-tags" data-testid="currentDayOfTheWeek">Today is <span id="today"></span></p>
 
-				<p data-testid="currentUTCTime" class"p-tags"> Current UTC Time is  <span id="time"></span></p>
+				<p class="p-tags" data-testid="currentUTCTime"> Current UTC Time is  <span id="time"></span></p>
 
 				<p data-testid="myTrack">My Track: Frontend-track</p>
 
-				<a data-testid="githubURL" href="https://github.com/az2818/az2818.github.io">view  Github repository</a>
+				<a data-testid="githubURL" href="https://az2818.github.io/">view  Github repository</a>
 			</div> 
-		</main>
+		</div>
 	</body>
 	<script>
 		//Todays Date
-		// let day1 = new Date(). toLocaleString('en-Us', { weekday: 'long',});
 		const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 		const d = new Date();
@@ -32,8 +28,18 @@
 		document.getElementById("today").innerHTML = day;
 
 		//UTC in milliseconds
-		const d = new Date();
-		let ms = d.getUTCMilliseconds();
-		document.getElementById("time").innerHTML = ms;
-	</script>
+
+		setInterval(myTimer, 1000);
+
+		function myTimer() {
+		const now = new Date();
+
+  		const milliseconds = now.getTime();
+		document.getElementById("time").innerHTML = milliseconds;
+
+		}
+
+
+</script>
+
 </html>
