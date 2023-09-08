@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(25, 0, 255);
+}
+ h1{
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	margin: 5px;
+	padding: 15px 0;
+}
+img{
+	width: 200px;
+	border-radius: 100px;
+	display: block;
+	margin: 20px auto;
+	
+}
+a{
+	text-align: center;
+	font-weight: bold;
+    font-size: 30px;
+	background-color: black;
+	color: white;
+	display: block;
+	margin: 20px;
+	padding: 5px 0;
+}
+span{
+	color: red;
+}
+p{
+	text-align: center;
+	padding: 5px 0;
+	font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
