@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="task-1.css">
 	</head>
 	<body>
-		<div class="container">
+		<main class="container">
 			<div>
 				<h1 data-testid="slackUserName">Edah Eyide Azariah</h1>
 				<img src="2pzk9e.jpg" alt="Edah Eyide Azariah" data-testid="slackDisplayImage">
@@ -20,12 +20,13 @@
 
 				<a data-testid="githubURL" href="https://github.com/az2818/az2818.github.io">view  Github repository</a>
 			</div> 
-		</div>
+		</main>
 	</body>
 	<script>
 		//Todays Date
-		let day1 = new Date(). toLocaleString('en-Us', { weekday: 'long',});
-		document.getElementById("today"). innerHTML = day1;
+		// let day1 = new Date(). toLocaleString('en-Us', { weekday: 'long',});
+		const day = now.getUTCDate();
+		document.getElementById("today"). innerHTML = day;
 
 		//UTC in milliseconds
 		const d = new Date();
